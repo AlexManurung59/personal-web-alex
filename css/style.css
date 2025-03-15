@@ -1,0 +1,176 @@
+/* style.css */
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box; /* Penting untuk box-sizing */
+  outline: none; /* Hilangkan semua outline */
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../public/bg1.jpg");
+  background-size: fit;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.container .hero1 h3 b {
+  color: orangered;
+}
+
+/* Navbar container */
+.navbar {
+  list-style: none;
+  display: flex; /* Membuat <li> sejajar secara horizontal */
+  justify-content: center; /* Pusatkan item */
+  padding: 10px 0;
+  width: 100%;
+  transition: 3s;
+  position: sticky;
+  top: 0;
+}
+
+/* Style untuk setiap item dalam navbar */
+.navbar li {
+  margin: 0 15px; /* Jarak antar item */
+}
+
+/* Style untuk link */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s;
+}
+
+/* Efek hover */
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/*Gambar foto*/
+.container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.container {
+  display: flex;
+}
+
+/*image dan h1 serta p*/
+.container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kedalaman */
+  margin: 2rem auto;
+  max-width: 800px; /* Lebar maksimum container */
+  height: 65vh;
+}
+
+.container img {
+  width: 200px; /* Sesuaikan lebar gambar */
+  height: 200px; /* Sesuaikan tinggi gambar */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+  object-fit: cover; /* Memastikan gambar terpotong dengan benar */
+  margin-right: 2rem;
+}
+
+.hero1 {
+  flex: 1; /* Mengisi sisa ruang */
+}
+
+.hero1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333; /* Warna teks utama */
+}
+
+.hero1 h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #666; /* Warna teks sekunder */
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Mengubah arah flex menjadi kolom pada layar kecil */
+    align-items: center; /* Menengahkan item secara horizontal */
+    text-align: center; /* Menengahkan teks */
+  }
+
+  .container img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero1 h1 {
+    font-size: 2rem;
+  }
+
+  .hero1 h3 {
+    font-size: 1rem;
+  }
+}
+
+.button1 a {
+  color: #000;
+  background-color: #00ffd5;
+  max-width: 300px;
+  width: 80%;
+  padding: 12px 20px;
+  font-size: 1.2rem; /* Menggunakan rem untuk ukuran font yang responsif */
+  border: none;
+  outline: none;
+  border-radius: 50px; /* Radius border yang lebih umum */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: block; /* Mengubah display menjadi block agar width berfungsi dengan baik */
+  margin: 20px auto; /* Membuat tombol berada di tengah horizontal dan memberi margin vertikal */
+  position: relative; /* Menghapus position absolute dan transform untuk layout yang lebih sederhana */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.button1 a:hover {
+  background-color: #00b395;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Media Query untuk Layar Kecil (Ponsel) */
+@media (max-width: 480px) {
+  button {
+    font-size: 1rem; /* Ukuran font yang lebih kecil pada layar kecil */
+    width: 90%; /* Lebar tombol yang lebih besar pada layar kecil */
+    padding: 10px 15px;
+  }
+}
+
+/* Media query untuk layar besar (desktop) */
+@media (min-width: 1024px) {
+  .button {
+    width: 20%; /* Tetap proporsional */
+    font-size: 2rem;
+  }
+}
+
+.page1 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+}

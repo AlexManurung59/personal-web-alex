@@ -1,0 +1,128 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box; /* Penting untuk box-sizing */
+  outline: none; /* Hilangkan semua outline */
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../public/bg1.jpg");
+  background-size: fit;
+  background-repeat: no-repeat;
+  background-color: aqua;
+}
+
+.page1 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Container h1 About Me*/
+.container1 {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.container1 h1 {
+  text-align: center;
+}
+
+.container1 p {
+  text-align: justify;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap; /* Membuat elemen berpindah baris jika tidak cukup ruang */
+  justify-content: center; /* Mengatur elemen ke tengah horizontal */
+  padding: 30px;
+}
+
+.text {
+  text-align: center;
+}
+
+/* Card */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+  font-family: sans-serif;
+  transition: transform 0.3s ease;
+  margin: 10px; /* Menambahkan margin antar kartu */
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card1 button {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  margin: 10px auto;
+  color: orangered;
+  background-color: aquamarine;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none; /* menghilangkan outline */
+}
+
+.card1 button:hover {
+  color: blue;
+  transform: scale(1.2);
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .card1 {
+    width: 75%;
+  }
+}
+/* Navbar container */
+.navbar {
+  list-style: none;
+  display: flex; /* Membuat <li> sejajar secara horizontal */
+  justify-content: center; /* Pusatkan item */
+  padding: 10px 0;
+  width: 100%;
+  transition: 3s;
+}
+
+/* Style untuk setiap item dalam navbar */
+.navbar li {
+  margin: 0 15px; /* Jarak antar item */
+}
+
+/* Style untuk link */
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s;
+}
+
+/* Efek hover */
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Personal Web</title>
+  </head>
+  <body>
+    <!--Js untuk Responsif-->
+    <script>
+      function myFunction() {
+        const x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="src/About/about.html">About</a></li>
+        <li><a href="src/Project/project.html">Project</a></li>
+        <!--<li><a href="/src/HireMe/hireme.html">Hire Me</a></li>-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </ul>
+    </nav>
+    <div class="hero">
+      <div class="container">
+        <img src="public/ad.jpeg" alt="photo" />
+        <div class="hero1">
+          <h1>Hi, My Name is Alex Jhosua Virdo Manurung</h1>
+          <h3>I'm <b>FrontEnd Developer Student & Crewing Officer</b></h3>
+        </div>
+      </div>
+      <div class="button1">
+        <a href="mailto:alexvirdo59@gmail.com">Contact Me</a>
+      </div>
+    </div>
+    <!-- <section class="secondhero">
+      <div class="container2">
+        <div class="page1">
+          <h1>About Me</h1>
+          <p>
+            Graduate from Merchant Marine Higher Institute ( Sekolah Tinggi Ilmu
+            Pelayaran with Bachelor Degree Port and Shipping Management ), who
+            learn Web Development and want to start a new journey as FrontEnd
+            Developer.
+          </p>
+        </div>
+      </div>-->
+    <!--<div class="text">
+        <h2>Experience</h2>
+      </div>
+      <div class="container3">
+        <div class="card1">
+          <img src="/public/crewing.jpg" alt="pict" />
+          <button type="menu">
+            <a href="/src/maritime.html">Maritime Sector</a>
+          </button>
+        </div>
+        <div class="card1">
+          <img src="/public/FE.jpg" alt="pict" />
+          <button type="menu">
+            <a href="/src/frontend.html">FrontEnd Sector</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="thirdhero">
+      <div class="container4">
+        <h1>My Project</h1>
+        <p>
+          As a beginner Front End web developer, most of my projects are
+          assignments from a bootcamp I attended. GrandVSA is the only real
+          project, and I'm still working on it.
+        </p>
+      </div>
+      <div class="pilar">
+        <a href="https://esbek-company-profile.vercel.app/"
+          ><img src="/public/esbex.png" alt="esbex" />Esbex</a
+        >
+        <a href="https://entersea-foundation-blog.vercel.app/"
+          ><img src="/public/foundation.png" alt="Foundation" />Foundation</a
+        >
+        <a href="https://jcwdol130201.purwadhikabootcamp.com/"
+          ><img src="/public/mind-groceries.png" alt="Mind Groceries" />Mind
+          Groceries</a
+        >
+        <a href="https://granvsa.vercel.app/"
+          ><img src="/public/vsa.png" alt="GrandVSA" />GrandVSA</a
+        >
+      </div>
+    </section>-->
+  </body>
+</html>
