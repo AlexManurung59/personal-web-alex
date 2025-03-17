@@ -9,9 +9,20 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../public/bg1.jpg");
+  background-image: url("../images/bg1.jpg");
   background-size: fit;
   background-repeat: no-repeat;
+}
+
+.container3 {
+  display: block;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kedalaman */
+  margin: 2rem auto;
+  max-width: 820px;
 }
 
 /* Navbar container */
@@ -46,22 +57,24 @@ body {
   border-radius: 5px;
 }
 
-.container {
-  display: block;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kedalaman */
-  margin: 2rem auto;
-  max-width: 820px;
+.pilar {
+  text-align: center; /* Memusatkan elemen-elemen di dalam div */
 }
 
-.documentation h2 {
-  text-align: center;
+.pilar a {
+  display: inline-block; /* Membuat elemen-elemen link berbaris */
+  margin: 10px; /* Memberikan ruang antar elemen */
+  text-decoration: none; /* Menghilangkan garis bawah link */
+  color: #333; /* Warna teks */
 }
 
-.documentation ul {
-  text-align: center;
-  align-items: center;
+.pilar a img {
+  display: block; /* Membuat gambar menjadi blok agar teks berada di bawahnya */
+  margin-bottom: 5px; /* Memberikan ruang antara gambar dan teks */
+  width: 250px; /* Sesuaikan ukuran gambar */
+  height: 150px; /* Mempertahankan rasio aspek gambar */
+}
+
+.pilar a:hover {
+  transform: scale(3s);
 }
